@@ -1,0 +1,233 @@
+.right-box-wrapper{
+    padding: 60px 40px;
+    height: 100vh;
+    width: 650px;
+    box-sizing: border-box;
+    position: relative;
+    display: grid;
+    grid-template-rows: 120px auto;
+    padding-bottom: 0;
+    grid-gap: 10px;
+    border-right: 2px solid #f0f0f0;
+
+    h3{
+        font-size: 20px;
+        color: #F6AD34;
+        font-weight: 500;
+    }
+
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+}
+
+
+.todo-wrapper{
+    padding-top: 30px;
+}
+
+hr{
+    border: 0;
+    width: 500px;
+    height: 2px;
+    background: #dddddd;
+    margin-top: 20px;
+}
+
+// TODO INPUT
+.todo-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.input-wrapper{
+    display: grid;
+    grid-template-columns: auto 50px;
+    padding-bottom: 30px;
+    grid-gap: 5px;
+
+    button{
+        border: 1px solid #b0b0b0;
+
+        img{
+            height: 18px;
+            width: 18px;
+            // filter: brightness(0)invert(1);
+        }
+    }
+}
+
+.action-btns{
+    display: flex;
+    gap: 15px;
+
+    img{
+        height: 16px;
+        width: 16px;
+        filter: brightness(1)invert(0.5);
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            filter: none;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    button{
+        background: none;
+        outline: transparent;
+        border: 0;
+    }
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 3px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+
+    span{
+        padding: 0;
+    }
+
+    &:hover{
+        border: 2px solid #F6AD34;
+        transition: all 0.5s ease-in-out;
+    }
+
+    h4{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    input{
+        padding: 5px;
+    }
+
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+        width: 100%;
+    }
+}
+
+.main-flex{
+    display: flex;
+    // gap: 20px;
+}
+
+.complete-wrapper{
+    padding: 60px 30px;
+    width: 300px;
+
+    hr{
+        width: 200px;
+    }
+
+    .task{
+        h4{
+            text-decoration: line-through;
+            color: #949494;
+        }
+    }
+
+    .complete-list{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .complete-wrapper{
+        display: none;
+    }
+
+    .right-box-wrapper{
+        width: auto;
+        border: 0;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .menu-list{
+        .link {
+            align-items: center;
+            justify-content: center;
+
+            span{
+                display: none;
+            }
+        }
+    }
+
+    hr{
+        width: 90%;
+    }
+
+    .right-box-wrapper h1 {
+        font-size: 25px;
+    }
+
+    .right-box-wrapper h3 {
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .logo-wrapper {
+        padding: 20px;
+        box-sizing: border-box;
+        padding-top: 30px;
+        padding-bottom: 15px;
+
+        .logo{
+            font-size: 20px;
+            height: 20px;
+            width: 25px;
+        }
+    }
+
+    .menu-list .link{
+        padding: 20px;
+    }
+
+    .right-box-wrapper {
+        padding: 20px;
+    }
+
+    .right-box-wrapper h3 {
+        font-size: 15px;
+    }
+
+    .right-box-wrapper h1 {
+        font-size: 18px;
+    }
+
+    .task{
+        padding: 10px;
+
+        h4{
+            font-size: 14px;
+        }
+    }
+
+    .action-btns img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .input-wrapper {
+        grid-template-columns: auto 70px;
+        padding-bottom: 10px;
+    }
+
+
+}
